@@ -1,0 +1,49 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+$types: m, p;
+
+@each $type in $types {
+    @for $i from 1 through 8{
+        .#{$type}t-#{$i}{
+            @if($type==m ){
+                margin-top: 0.25em * $i;
+            }@else{
+                padding-top: 00.25em * $i;
+            }
+        }  
+
+        .#{$type}b-#{$i}{
+            @if($type==m ){
+                margin-bottom: 0.25em * $i;
+            }@else{
+                padding-bottom: 00.25em * $i;
+            }
+        }
+
+        .#{$type}l-#{$i}{
+            @if($type==m ){
+                margin-left: 0.25em * $i;
+            }@else{
+                padding-left: 00.25em * $i;
+            }
+        }
+
+        .#{$type}r-#{$i}{
+            @if($type==m ){
+                margin-right: 0.25em * $i;
+            }@else{
+                padding-right: 00.25em * $i;
+            }
+        }
+    }
+      
+}
+
+

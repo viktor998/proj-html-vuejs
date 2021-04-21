@@ -1,0 +1,79 @@
+header{
+    .jumptron{
+        height: 700px;
+        width: 100vw;
+        background-image: url(../images/bg-transparent-3.png);
+        background-color: $green-kelp;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        ul{
+            width: 100%;
+            list-style: none;
+            @include flex-around-center;
+            li{
+                font-size: nth($fs, 3);
+                color: $white;
+
+                & span{
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .bg-img{
+            height: 75%;
+            width: 100%;
+            background-image: url(../images/banner-5-2x-scaled.jpg);
+            box-shadow: inset 400px 400px 400px 400px #00000070;
+            background-size: cover;
+
+            .container{
+                height: 100%;
+                color: $white;
+                @include flex-column-start-center;
+
+                span{
+                    text-transform: uppercase;
+                    font-size: nth($fs, 3);
+                    font-weight: 500;
+                }
+
+                h3{
+                    width: 400px;
+                    font-size: nth($fs, 8);
+                }
+
+                input{
+                    padding: 10px;
+                    border-radius: 20px;
+
+                    &:hover{
+                        background-color: $bay-leaf;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .jumbo-bottom{
+            @include flex-around-center;
+
+            img{
+                height: 300px;
+                padding-top: 100px;
+            }
+
+            span{
+                color: $white;
+                font-size: nth($fs, 3);
+
+                a{
+                    color: $white;
+                    font-size: nth($fs, 5);
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+}

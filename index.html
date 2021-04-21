@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/logo-symbol.png" alt="logo">
+                    <h3 class="pl-4">Avada Pet Supplies</h3>
+                </div>
+                <div class="input-search">
+                    <input type="text" placeholder="Search.."  v-model='search'>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="contact-us">
+                    <h4>Questions?</h4>
+                    <span class="pl-1">Call us : 1.800.123.4567 </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-shopping-bag"></i>
+                    <i class="far fa-user pl-3"></i>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="container">
+                <nav>
+                    <div class="links">
+                        <ul>
+                            <li><a class="active arrow-down" href="">Home</a></li>
+                            <li><a class="arrow-down" href="">Shop</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a class="arrow-down" href="">Shop by brand</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="jumptron">
+                <div class="container">
+                    <ul>
+                        <li><i class="far fa-map"></i> <span>International</span> Shipping Services</li>
+                        <li><i class="far fa-clock"></i> See our <span>store hours</span> and services</li>
+                        <li><i class="fas fa-check"></i> We price match to give you the <span>best deals</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-img">
+                    <div class="container">
+                        <span>find the best animal supplies</span>
+                        <h3 class="pt-4 pb-8">
+                            We know animals are a part of your 
+                            family, let us help take care of them.
+                        </h3>
+
+                        <input type="button" value="Learn more about us">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="jumbo-bottom">
+                        <img src="./assets/images/food-transparent-18-400x420.png" alt="food">
+                        <span>
+                            Get $25 OFF your first purchase
+                            of our homemade pet food! 
+    
+                            <a href="">Visit the shop</a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

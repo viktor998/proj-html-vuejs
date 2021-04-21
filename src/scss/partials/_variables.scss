@@ -1,0 +1,45 @@
+// Colors
+
+// COLOR--CUBE
+
+$white: #ffffff;
+$green-kelp: #1e3020;
+$natural-gray: #978f88;
+$potters-clay: #855136;
+$ming: #35697c;
+$mandys-pink: #efbeb0;
+$morning-glory: #8bd3df;
+$amaranth: #e52b51;
+$apple: #59b742;
+
+// MEDIAN--CUT
+
+$heavy-metal: #2a382a;
+$westar: #dcd5d0;
+$cape-palliser: #a66044;
+$bay-leaf: #77ab82;
+$slate-gray: #79849a;
+
+// MATERIAL--DESIGN
+
+$sepia-skin: #a46042;
+$bandicoot: #7c7c72;
+$sepia: #6e3b15;
+$taupe: #463a32;
+$dawn-pink: #faf4f4;
+
+// Color
+
+// Font--Size
+
+// $em: 0.25;
+
+// @for $i from 1 through 8{
+//     #{$fs}-#{$i}: append($em * $i);
+    
+// }
+
+$fs: ();
+@for $i from 1 through 8 {
+  $fs: append($fs, $i * 0.25em);
+}

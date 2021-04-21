@@ -1,0 +1,40 @@
+.container{
+    nav{
+        width: 100%;
+        .links{
+            width: 100%;
+            margin: 0 auto;
+            ul{
+                list-style: none;
+                @include flex-center-center;
+                li{
+                    a{
+                        text-decoration: none;
+                        padding: 0 20px;
+                        color: $natural-gray;
+
+                        &.active{
+                            color: black;
+                        }
+
+                        &:hover{
+                            color: black;
+                        }
+
+                        &.arrow-down::after{
+                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+                            padding-left: 5px;
+                        }
+
+                        &.arrow-down{
+                            @include flex-center-center;
+                            
+                        }
+                    }
+
+                   
+                }
+            }
+        }
+    }
+}
