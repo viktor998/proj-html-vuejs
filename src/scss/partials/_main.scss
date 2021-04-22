@@ -1,0 +1,77 @@
+@import 'section-image-xl';
+
+main{
+    section.browse-category{
+        h2{
+            font-size: nth($fs, 8);
+            color: $green-kelp;
+        }
+
+        span{
+            font-size: nth($fs, 3);
+            font-weight: bold;
+        }
+    }
+
+    .categories{
+        @include flex-between-center;
+
+        .category{
+            @include flex-center-center;
+            flex-direction: column;
+            width: calc(100% /4 - 5px);
+            height: 280px;
+            
+
+            .category-img{
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 250px 250px;
+                background-color: $dawn-pink;
+            }
+        }
+    }
+
+    .food_type{
+        height: 100%;
+        @include flex-between-center;
+        padding: 0 -25px;
+
+        .food{
+            width: calc(100% / 3 - 25px);
+            height: 500px;
+            background-color: $green-kelp;
+            background-image:  url(../images/bg-transparent-3.png);
+            @include flex-around-center;
+            flex-direction: column;
+
+            span{
+                font-size: nth($fs, 7);
+                color: $white;
+            }
+
+            p{
+                font-size: nth($fs, 3);
+                color: $apple;
+                font-weight: bolder;
+            }
+
+            &-img img{
+                height: 200px;
+                
+            }
+        }
+
+        input{
+            @include button;
+            background-color: $apple;
+            color: white;
+
+            &:hover{
+                @include button-hover-white;
+            }
+        }
+    }
+}

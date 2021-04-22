@@ -1,10 +1,18 @@
 .container{
     width: 70%;
     margin: 0 auto;
+
+    @include xl{
+        width: 50%;
+    }
 }
 
 .display-flex{
     display: flex;
+}
+
+.text-center{
+    text-align: center;
 }
 
 $types: m, p;

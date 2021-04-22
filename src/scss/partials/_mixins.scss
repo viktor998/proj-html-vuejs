@@ -22,3 +22,25 @@
     align-items: flex-start;
     justify-content: center;
 }
+
+@mixin button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+@mixin button-hover-green{
+    background-color: $apple;
+    color: $white;
+}
+
+@mixin button-hover-white{
+    background-color: $white;
+    color: black;
+}
+
+@mixin xl {
+    @media(min-width: 1400px) { 
+        @content;
+    }
+}

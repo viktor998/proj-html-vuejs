@@ -44,19 +44,18 @@ header{
                 }
 
                 input{
-                    padding: 10px;
-                    border-radius: 20px;
+                    @include button;
 
                     &:hover{
-                        background-color: $bay-leaf;
-                        color: $white;
+                        @include button-hover-green;
                     }
                 }
             }
         }
 
         .jumbo-bottom{
-            @include flex-around-center;
+            width: 100%;
+            @include flex-center-center;
 
             img{
                 height: 300px;
@@ -64,6 +63,7 @@ header{
             }
 
             span{
+                padding-top: 20px;
                 color: $white;
                 font-size: nth($fs, 3);
 

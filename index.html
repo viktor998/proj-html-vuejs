@@ -72,7 +72,7 @@
                 <div class="container">
                     <div class="jumbo-bottom">
                         <img src="./assets/images/food-transparent-18-400x420.png" alt="food">
-                        <span>
+                        <span class="pl-6">
                             Get $25 OFF your first purchase
                             of our homemade pet food! 
     
@@ -84,10 +84,70 @@
             </div>
         </header>
 
+        <main>
+            <section class="browse-category">
+                <div class="container text-center pt-8 pb-8">
+                    <h2 class="pt-8 pb-2">Browse by category</h2>
+                    <div class="container">
+                        <span class="pb-8">
+                            Augue purus et, tincidunt condimentum mauris.
+                            At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, 
+                            consequat nulla rhoncus dictum. Viverra.
+                        </span>
+                    </div>
+
+                    <div class="categories pt-6 pb-8">
+                        <div v-for='category in categories' class="category">
+                            <div class="category-img" :style="`background-image: url(${category.type_img});`">
+
+                            </div>
+                            
+                            <span class="pt-6">
+                                {{category.type}} ({{category.num}})
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="food_type pt-6">
+                        <div v-for='food in food_type' class="food pt-6 pb-8">
+                            <span class="pt-4">
+                                {{food.title}}
+                            </span>
+                            <p> {{food.subtitle}} </p>
+                            <div class="food-img">
+                                <img :src="`${food.type_img}`" alt="food">
+                            </div>
+                            
+                            <input type="button" :value="`Shop ${food.type} food`">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="image-xl pt-2 pb-6">
+                <div class="container">
+                    <div class="image ">
+                        <span>find the best animal supplies</span>
+                        <h3 class="pt-4 pb-8">
+                            We know animals are a part of your 
+                            family, let us help take care of them.
+                        </h3>
+
+                        <input type="button" value="Learn more about us">
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./assets/js/dati.js"></script>
     <script src="./assets/js/main.js"></script>
+    
 </body>
 </html>
