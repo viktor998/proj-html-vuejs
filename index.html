@@ -128,17 +128,36 @@
 
             <section class="image-xl pt-2 pb-6">
                 <div class="container">
-                    <div class="image ">
+                    <div class="image mb-8">
                         <span>find the best animal supplies</span>
                         <h3 class="pt-4 pb-8">
-                            We know animals are a part of your 
-                            family, let us help take care of them.
+                            New arrivals weekly
                         </h3>
 
                         <input type="button" value="Learn more about us">
                     </div>
+
+                    <div class="products-button">
+                        <span class="pt-8">All-time best sellers</span>
+                    <input class="products-view" type="button" value="View all products">
+                    </div>
                 </div>
 
+            </section>
+
+            <section class="products-price pb-8">
+                <div class="container">
+                    <span class="pb-8">Items everyone loves</span>
+                </div>
+                <div class="container">
+                    
+                    <div v-for='product in products' class="product pt-4">
+                        <img :src="`${product.product_img}`" alt="">
+                        <span class="description pt-4">{{product.title}}</span>
+                        <span  class="price"> <span class="discount pr-2">{{product.discount}}</span> {{product.price}}</span>
+                        
+                    </div>
+                </div>
             </section>
         </main>
 

@@ -4,5 +4,6 @@ var app = new Vue({
         search: '',
         categories: categories,
         food_type: food,
+        products: products,
     }
 });

@@ -32,11 +32,13 @@
 @mixin button-hover-green{
     background-color: $apple;
     color: $white;
+    cursor: pointer;
 }
 
 @mixin button-hover-white{
     background-color: $white;
     color: black;
+    cursor: pointer;
 }
 
 @mixin xl {

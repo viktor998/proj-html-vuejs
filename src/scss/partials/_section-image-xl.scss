@@ -18,6 +18,46 @@ section{
                         @include button-hover-green;
                     }
                 }
+                span{
+                    text-transform: uppercase;
+                    font-size: nth($fs, 3);
+                    font-weight: 500;
+                }
+
+                h3{
+                   
+                    font-size: nth($fs, 8);
+                }
+            }
+
+            .products-button{
+                width: 100%;
+                @include flex-between-center;
+                flex-direction: column;
+                span{
+                    font-size: nth($fs, 3);
+                    font-weight: bold;
+                    color: $apple;
+                    margin-right: auto;
+                    justify-self: left;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                input.products-view{
+                    @include button;
+                    background-color: $apple;
+                    color: $white;
+                    font-weight: 400;
+                    font-size: nth($fs, 3);
+                    margin-left: auto;
+                    justify-self: right;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

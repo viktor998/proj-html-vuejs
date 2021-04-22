@@ -38,3 +38,27 @@ const food= [
         type_img: './assets/images/food-transparent-16-400x420.png'
     }
 ]
+
+const products = [
+    {   
+        title: 'Transport cage',
+        price: '$25.00',
+        product_img: './assets/images/product-21-200x200.jpg'
+    },
+    {   
+        title: 'Dog leash',
+        price: '$25.00',
+        product_img: './assets/images/product-20-200x200.jpg'
+    },
+    {   
+        title: 'Animal transport cage',
+        price: '$25.00',
+        discount: '$35.00',
+        product_img: './assets/images/product-16-200x200.jpg'
+    },
+    {   
+        title: 'Colorful cat leash',
+        price: '$12.00',
+        product_img: './assets/images/product-11-200x200.jpg'
+    }
+]

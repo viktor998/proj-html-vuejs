@@ -1,0 +1,28 @@
+section.products-price{
+    .container{
+        span.pb-8{
+            font-size: nth($fs, 5);
+            font-weight: 600;
+        }
+        @include flex-between-center;
+
+        .product{
+            @include flex-center-center;
+            flex-direction: column;
+            line-height: 2;
+            span{
+                font-size: nth($fs, 3);
+                font-weight: bold;
+
+                &.price{
+                    color: $bay-leaf;
+
+                    span.discount{
+                        text-decoration: line-through;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

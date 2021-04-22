@@ -378,6 +378,7 @@ header .jumptron .bg-img .container input {
 header .jumptron .bg-img .container input:hover {
   background-color: #59b742;
   color: #ffffff;
+  cursor: pointer;
 }
 header .jumptron .jumbo-bottom {
   width: 100%;
@@ -464,6 +465,73 @@ section.image-xl .container .image input {
 section.image-xl .container .image input:hover {
   background-color: #59b742;
   color: #ffffff;
+  cursor: pointer;
+}
+section.image-xl .container .image span {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+section.image-xl .container .image h3 {
+  font-size: 2em;
+}
+section.image-xl .container .products-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+section.image-xl .container .products-button span {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #59b742;
+  margin-right: auto;
+  justify-self: left;
+}
+section.image-xl .container .products-button span:hover {
+  cursor: pointer;
+}
+section.image-xl .container .products-button input.products-view {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color: #59b742;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.75em;
+  margin-left: auto;
+  justify-self: right;
+}
+section.image-xl .container .products-button input.products-view:hover {
+  cursor: pointer;
+}
+
+section.products-price .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.products-price .container span.pb-8 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+section.products-price .container .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+}
+section.products-price .container .product span {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+section.products-price .container .product span.price {
+  color: #77ab82;
+}
+section.products-price .container .product span.price span.discount {
+  text-decoration: line-through;
 }
 
 main section.browse-category h2 {
@@ -507,10 +575,14 @@ main .food_type .food {
   height: 500px;
   background-color: #1e3020;
   background-image: url(../images/bg-transparent-3.png);
+  transition: all 0.1s;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+main .food_type .food:hover {
+  transform: scale(1.05);
 }
 main .food_type .food span {
   font-size: 1.75em;
@@ -534,4 +606,5 @@ main .food_type input {
 main .food_type input:hover {
   background-color: #ffffff;
   color: black;
+  cursor: pointer;
 }
