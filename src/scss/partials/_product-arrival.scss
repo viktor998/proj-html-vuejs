@@ -1,0 +1,65 @@
+section.product-arrival{
+    p.pb-8{
+        color: $bay-leaf;
+        font-weight: 600;
+    }
+    .latest-products{
+        width: 100%;
+        @include flex-between-center;
+        flex-wrap: wrap;
+        
+
+        .product{
+            .image{
+                width: 300px;
+                height: 300px;
+                position: relative;
+
+                &:hover .overlay{
+                    @include flex-column-center-center;
+                }
+                
+                .overlay{
+                    width: 100%;
+                    height: 100%;
+                    background-color: $sepia-skin;
+                    position: absolute;
+                    top: 0;
+                    display: none;
+                    
+                    color: $white;
+
+                    i, p:hover{
+                        cursor: pointer;
+                    }
+
+                    i{
+                        font-size: nth($fs, 8);
+                        padding: 15px 18px;
+                        border-radius: 50%;
+                        background-color: rgba(0, 0, 0, 0.555);
+                    }
+
+                    p{
+                        color: $white;
+                        font-size: nth($fs, 3);
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+            p{
+                color: $bay-leaf;
+                font-size: nth($fs, 4);
+
+                span.discount{
+                    color: black;
+                    font-size: nth($fs, 3);
+                    text-decoration: line-through;
+                }
+            }
+            
+        }
+    }
+}

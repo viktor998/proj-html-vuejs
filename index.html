@@ -270,6 +270,31 @@
                 </div>
 
             </section>
+
+            <section class="product-arrival pt-8 text-center">
+
+                <div class="container pt-8">
+                    <h3 class="pb-4">New products arrival</h3>
+                    <p class="pb-8">Latest products</p>
+
+                    <div class="latest-products">
+                        <div v-for='product in products_arrival' class="product mb-8">
+                            <div class="image">
+                                <img :src="`${product.product_img}`" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-check-square"></i>
+                                    <p class="pt-3">view cart</p>
+                                </div>
+                            </div>
+
+                            <h4 class="pt-4 pb-4">{{product.title}}</h4>
+                            <p> <span class="discount pr-2">{{product.discount}}</span> {{product.price}} {{product.price_between}}</p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
         </main>
 
     </div>

@@ -7,5 +7,6 @@ var app = new Vue({
         products: products,
         testimonials: testimonials,
         tips: tips,
+        products_arrival: products_arrival,
     }
 });

@@ -338,6 +338,7 @@ header .jumptron ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 header .jumptron ul li {
   font-size: 0.75em;
@@ -360,6 +361,7 @@ header .jumptron .bg-img .container {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 }
 header .jumptron .bg-img .container span {
   text-transform: uppercase;
@@ -584,6 +586,7 @@ section.testimonials .container .newsletter {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
   padding-left: 50px;
 }
 section.testimonials .container .newsletter span {
@@ -706,6 +709,7 @@ section.popular-arrivals .images .img-1 .overlay, section.popular-arrivals .imag
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   position: absolute;
   top: 0;
   color: #ffffff;
@@ -745,10 +749,68 @@ section.popular-arrivals .container .icons .icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   color: #ffffff;
 }
 section.popular-arrivals .container .icons .icon i {
   font-size: 2.5em;
+}
+
+section.product-arrival p.pb-8 {
+  color: #77ab82;
+  font-weight: 600;
+}
+section.product-arrival .latest-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.product-arrival .latest-products .product .image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+section.product-arrival .latest-products .product .image:hover .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.product-arrival .latest-products .product .image .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #a45f4281;
+  position: absolute;
+  top: 0;
+  display: none;
+  color: #ffffff;
+}
+section.product-arrival .latest-products .product .image .overlay i, section.product-arrival .latest-products .product .image .overlay p:hover {
+  cursor: pointer;
+}
+section.product-arrival .latest-products .product .image .overlay i {
+  font-size: 2em;
+  padding: 15px 18px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+section.product-arrival .latest-products .product .image .overlay p {
+  color: #ffffff;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+section.product-arrival .latest-products .product p {
+  color: #77ab82;
+  font-size: 1em;
+}
+section.product-arrival .latest-products .product p span.discount {
+  color: black;
+  font-size: 0.75em;
+  text-decoration: line-through;
 }
 
 main section.browse-category h2 {
@@ -796,6 +858,7 @@ main .food_type .food {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 main .food_type .food:hover {

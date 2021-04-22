@@ -103,3 +103,37 @@ const tips = [
         pic: './assets/images/blog-4-200x200.jpg'
     }
 ]
+
+const products_arrival = [
+    {   
+        title: 'Colored pet bed',
+        price_between: '$18.00 - $25.00',
+        product_img: './assets/images/product-8-300x300.jpg'
+    },
+    {   
+        title: 'Colorful ball set',
+        price: '$29.00',
+        product_img: './assets/images/product-2-300x300.jpg'
+    },
+    {   
+        title: 'Dog bone',
+        price: '$25.00',
+        discount: '$29.00',
+        product_img: './assets/images/product-3-300x300.jpg'
+    },
+    {   
+        title: 'Animal transport bag',
+        price: '$29.00',
+        product_img: './assets/images/product-4-300x300.jpg'
+    },
+    {   
+        title: 'Animal transport cage',
+        price: '$35.00',
+        product_img: './assets/images/product-5-300x300.jpg'
+    },
+    {   
+        title: 'Closable cat litter',
+        price: '$16.00',
+        product_img: './assets/images/product-10-300x300.jpg'
+    }
+]
