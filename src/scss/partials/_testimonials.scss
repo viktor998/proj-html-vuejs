@@ -1,0 +1,68 @@
+section.testimonials{
+    background-color: $green-kelp;
+    background-image: url(../images/bg-transparent-3.png);
+    height: 450px;
+
+    .container{
+        height: 100%;
+        
+        h1{
+            color: $white;
+            font-size: nth($fs, 8);
+        }
+        
+        .customers{
+            width: 100%;
+            @include flex-between-center;
+            
+            .testimonial{
+                @include flex-center-center;
+                flex-direction: column;
+                color: $white;
+                img{
+                    height: 60px;
+                    border-radius: 50%;
+                }
+
+                span{
+                    width: 300px;
+                    font-size: nth($fs, 3);
+                    
+                }
+
+                p{
+                    color: $westar;
+                    font-size: nth($fs, 3);
+                }
+            }
+        }
+
+        .newsletter{
+            height: 350px;
+            background-image: url('../images/banner-7-2x-scaled.jpg');
+            background-size: cover;
+            
+            @include flex-column-start-center;
+            padding-left: 50px;
+
+            input{
+                
+                @include button;
+
+                &.text{
+                    background-color: $westar;
+                    width: 270px;
+                }
+
+                &.button{
+                    background-color: $apple;
+                    color: $white;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

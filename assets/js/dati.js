@@ -62,3 +62,21 @@ const products = [
         product_img: './assets/images/product-11-200x200.jpg'
     }
 ]
+
+const testimonials = [
+    {   
+        review: 'Auctor est hanitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.',
+        customer_name: 'Lisa Smith, ThemeFusion',
+        profile_pic: './assets/images/avatar-3-200x200.jpg'
+    },
+    {   
+        review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum delectus repellat non, quaerat minima!',
+        customer_name: 'Melissa Green, ThemeFusion',
+        profile_pic: './assets/images/avatar-1-200x200.jpg'
+    },
+    {   
+        review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illum delectus repellat non, quaerat minima!',
+        customer_name: 'Sam Lewis, ThemeFusion',
+        profile_pic: './assets/images/avatar-4-200x200.jpg'
+    }
+]

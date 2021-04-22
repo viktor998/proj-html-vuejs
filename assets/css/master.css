@@ -534,6 +534,70 @@ section.products-price .container .product span.price span.discount {
   text-decoration: line-through;
 }
 
+section.testimonials {
+  background-color: #1e3020;
+  background-image: url(../images/bg-transparent-3.png);
+  height: 450px;
+}
+section.testimonials .container {
+  height: 100%;
+}
+section.testimonials .container h1 {
+  color: #ffffff;
+  font-size: 2em;
+}
+section.testimonials .container .customers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.testimonials .container .customers .testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+section.testimonials .container .customers .testimonial img {
+  height: 60px;
+  border-radius: 50%;
+}
+section.testimonials .container .customers .testimonial span {
+  width: 300px;
+  font-size: 0.75em;
+}
+section.testimonials .container .customers .testimonial p {
+  color: #dcd5d0;
+  font-size: 0.75em;
+}
+section.testimonials .container .newsletter {
+  height: 350px;
+  background-image: url("../images/banner-7-2x-scaled.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+}
+section.testimonials .container .newsletter input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+section.testimonials .container .newsletter input.text {
+  background-color: #dcd5d0;
+  width: 270px;
+}
+section.testimonials .container .newsletter input.button {
+  background-color: #59b742;
+  color: #ffffff;
+}
+section.testimonials .container .newsletter input.button:hover {
+  cursor: pointer;
+}
+
 main section.browse-category h2 {
   font-size: 2em;
   color: #1e3020;

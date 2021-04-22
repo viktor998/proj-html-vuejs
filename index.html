@@ -159,6 +159,34 @@
                     </div>
                 </div>
             </section>
+
+            <section class="testimonials pt-8 text-center">
+                
+                <div class="container mt-8">
+                    <h1 class="pb-4">Users testimonials</h1>
+                    <div class="customers">
+                        <div v-for='testimonial in testimonials' class="testimonial pt-8 pb-8">
+                            <img  :src="`${testimonial.profile_pic}`" alt="">
+                            <span class="pb-4 pt-6">{{testimonial.review}}</span>
+                            <p>{{testimonial.customer_name}}</p>
+                        </div>
+                    </div>
+
+                    <div class="newsletter mt-8">
+                        <span class="pb-4 pt-6">Join our newsletter </span>
+                        <p class="pt-6 pb-6">
+                            Voluptat vel turpis nulla lorem sed semprer.
+                            Aliquam sagittis sem libero viverra vehicula nullam ut nisl.
+                        </p>
+
+                        <div class="inputs">
+                            <input class="text" type="text" placeholder="Insert your email ...*">
+                            <input class="button" type="button" value="Subscribe">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
 
     </div>
