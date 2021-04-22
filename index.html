@@ -160,9 +160,10 @@
                 </div>
             </section>
 
-            <section class="testimonials pt-8 text-center">
+            <section class="testimonials pt-8 mb-2 text-center">
                 
-                <div class="container mt-8">
+                <div class="testimonials-bg pt-8">
+                    <div class="container">
                     <h1 class="pb-4">Users testimonials</h1>
                     <div class="customers">
                         <div v-for='testimonial in testimonials' class="testimonial pt-8 pb-8">
@@ -172,16 +173,98 @@
                         </div>
                     </div>
 
-                    <div class="newsletter mt-8">
-                        <span class="pb-4 pt-6">Join our newsletter </span>
-                        <p class="pt-6 pb-6">
+                    
+                </div>
+
+                <div class="container">
+                    <div class="newsletter">
+                        <span class="pb-2 pt-6">Join our newsletter </span>
+                        <p class="pt-2 pb-8">
                             Voluptat vel turpis nulla lorem sed semprer.
                             Aliquam sagittis sem libero viverra vehicula nullam ut nisl.
                         </p>
 
-                        <div class="inputs">
+                        <div class="inputs pt-4">
                             <input class="text" type="text" placeholder="Insert your email ...*">
-                            <input class="button" type="button" value="Subscribe">
+                            <input class="button ml-6" type="button" value="Subscribe">
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                
+            </section>
+
+            <section class="tips-tricks pb-8 text-center">
+                <span class="section-name">Get the best tips & tricks</span>
+                <p class="mt-4 mb-8">Recent articles</p>
+
+                <div class="container pt-3 pb-8">
+                    <div class="card-articles">
+                        <div v-for='tip in tips' class="card-article">
+                            <div class="card-img">
+                                <img :src="`${tip.pic}`" alt="">
+                                <div class="overlay">
+                                    <p>{{tip.article}}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="title-article">
+                                <p class="title">{{tip.article}}</p>
+                                <p class="date pt-2">
+                                    {{tip.date}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input class="mt-6" type="button" value="Read all articles">
+            </section>
+
+
+            <section class="popular-arrivals mt-6">
+                <div class="images">
+                    <div class="img-1">
+                        <div class="overlay">
+                            <span>find the best animal supplies</span>
+                            <h3 class="pt-4 pb-8">
+                                Popular accessories
+                            </h3>
+
+                            <input type="button" value="Learn more about us">
+                        </div>
+                    </div>
+                    
+                    <div class="img-2">
+                        <div class="overlay">
+                            <span>find the best animal supplies</span>
+                            <h3 class="pt-5 pb-5">
+                                Popular accessories
+                            </h3>
+
+                            <input type="button" value="Learn more about us">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container pt-8 pb-8">
+                    <div class="icons pt-8 pb-4">
+                        <div class="icon">
+                            <i class="fas fa-truck pb-2"></i>
+                            <span>Free worldeide deliveries</span>
+                        </div>
+                        <div class="icon">
+                            <i class="far fa-map pb-2"></i>
+                            <span>Find stores near you</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-dollar-sign pb-2"></i>
+                            <span>Best price guaranteed</span>
+                        </div>
+                        <div class="icon">
+                            <i class="far fa-credit-card pb-2"></i>
+                            <span>All credit card accepted</span>
                         </div>
                     </div>
                 </div>

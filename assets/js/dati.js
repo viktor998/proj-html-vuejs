@@ -80,3 +80,26 @@ const testimonials = [
         profile_pic: './assets/images/avatar-4-200x200.jpg'
     }
 ]
+
+const tips = [
+    {   
+        article: 'How to "loose leash walk" your dog ',
+        date: 'April 21st, 2020',
+        pic: './assets/images/blog-1-200x200.jpg'
+    },
+    {   
+        article: 'Stop cats from scratching furniture',
+        date: 'April 19th, 2020',
+        pic: './assets/images/blog-2-200x200.jpg'
+    },
+    {   
+        article: 'Where to buy the best pet food',
+        date: 'April 18th, 2020',
+        pic: './assets/images/blog-3-200x200.jpg'
+    },
+    {   
+        article: 'Proper care for your pet toys',
+        date: 'April 17th, 2020',
+        pic: './assets/images/blog-4-200x200.jpg'
+    }
+]

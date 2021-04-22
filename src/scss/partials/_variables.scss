@@ -40,6 +40,6 @@ $dawn-pink: #faf4f4;
 // }
 
 $fs: ();
-@for $i from 1 through 8 {
+@for $i from 1 through 16 {
   $fs: append($fs, $i * 0.25em);
 }

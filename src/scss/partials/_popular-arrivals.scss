@@ -1,0 +1,72 @@
+section.popular-arrivals{
+    background-color: $green-kelp;
+    background-image: url(../images/bg-transparent-3.png);
+
+    .images{
+        width: 100%;
+        display: flex;
+        .img-1, .img-2{
+            width: 50%;
+            height: 350px;
+
+            @include xl{
+                height: 500px;
+            }
+            position: relative;
+            background-size: cover;
+            img{
+                width: 100%;
+                
+            }
+
+            .overlay{
+                background-color: rgba(0, 0, 0, 0.212);
+                width: 100%;
+                height: 100%;
+                @include flex-column-center-center;
+                position: absolute;
+                top: 0;
+                color: $white;
+                span{
+                    font-size: nth($fs, 2);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+
+                h3{
+                    font-size: nth($fs, 6);
+                }
+
+                input{
+                    @include button;
+
+                    &:hover{
+                        @include button-hover-green;
+                    }
+                }
+            }
+        }
+
+        .img-1{
+            background-image: url('../images/banner-8-2x.jpg');
+        }
+        .img-2{
+            background-image: url('../images/banner-9-2x.jpg');
+        }
+    }
+
+    .container{
+        .icons{
+            @include flex-between-center;
+            .icon{
+                @include flex-column-center-center;
+                i{
+                    font-size: nth($fs, 10);
+                }
+
+                color: $white;
+            }
+        }
+    }
+}

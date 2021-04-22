@@ -1,0 +1,74 @@
+section.tips-tricks{
+    span.section-name{
+        font-size: nth($fs, 6);
+    }
+
+    p{
+        color: $bay-leaf;
+        font-size: nth($fs, 3);
+        font-weight: bold;
+    }
+    .card-articles{
+        text-align: left;
+        @include flex-between-center;
+        .card-article{
+            .card-img{
+                position: relative;
+                &:hover .overlay{
+                    @include flex-center-center;
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    
+                }
+
+                
+                .overlay{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.219);
+                    width: 200px;
+                    height: 200px;
+                    top: 0;
+                    left: 0;
+                    text-align: center;
+                    display: none;
+                    
+                    
+                    p{
+                        width: 160px;
+                        color: $white;
+                    }
+
+                   
+                }
+            }
+
+            .title-article{
+                padding-top: 10px;
+                padding-left: 10px;
+                .title{
+                    font-size: nth($fs, 3);
+                    font-weight: 600;
+                    width: 160px;
+                    color: black;
+                    line-height: 1.5;
+
+                }
+
+                .date{
+                    font-size: nth($fs, 2);
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+            
+        }
+    }
+
+    input{
+        @include button;
+        background-color: $apple;
+        color: $white;
+    }
+}

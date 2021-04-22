@@ -535,9 +535,12 @@ section.products-price .container .product span.price span.discount {
 }
 
 section.testimonials {
+  height: 800px;
+}
+section.testimonials .testimonials-bg {
+  height: 400px;
   background-color: #1e3020;
   background-image: url(../images/bg-transparent-3.png);
-  height: 450px;
 }
 section.testimonials .container {
   height: 100%;
@@ -572,14 +575,25 @@ section.testimonials .container .customers .testimonial p {
   font-size: 0.75em;
 }
 section.testimonials .container .newsletter {
+  margin-top: -50px;
   height: 350px;
   background-image: url("../images/banner-7-2x-scaled.jpg");
+  box-shadow: inset 400px 400px 400px 400px rgba(0, 0, 0, 0.062);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-left: 50px;
+}
+section.testimonials .container .newsletter span {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+section.testimonials .container .newsletter p {
+  width: 450px;
+  text-align: left;
+  font-size: 0.75em;
 }
 section.testimonials .container .newsletter input {
   padding: 10px 20px;
@@ -588,7 +602,7 @@ section.testimonials .container .newsletter input {
 }
 section.testimonials .container .newsletter input.text {
   background-color: #dcd5d0;
-  width: 270px;
+  width: 300px;
 }
 section.testimonials .container .newsletter input.button {
   background-color: #59b742;
@@ -596,6 +610,145 @@ section.testimonials .container .newsletter input.button {
 }
 section.testimonials .container .newsletter input.button:hover {
   cursor: pointer;
+}
+
+section.tips-tricks span.section-name {
+  font-size: 1.5em;
+}
+section.tips-tricks p {
+  color: #77ab82;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+section.tips-tricks .card-articles {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.tips-tricks .card-articles .card-article .card-img {
+  position: relative;
+}
+section.tips-tricks .card-articles .card-article .card-img:hover .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.tips-tricks .card-articles .card-article .card-img img {
+  width: 200px;
+  height: 200px;
+}
+section.tips-tricks .card-articles .card-article .card-img .overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.219);
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+section.tips-tricks .card-articles .card-article .card-img .overlay p {
+  width: 160px;
+  color: #ffffff;
+}
+section.tips-tricks .card-articles .card-article .title-article {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+section.tips-tricks .card-articles .card-article .title-article .title {
+  font-size: 0.75em;
+  font-weight: 600;
+  width: 160px;
+  color: black;
+  line-height: 1.5;
+}
+section.tips-tricks .card-articles .card-article .title-article .date {
+  font-size: 0.5em;
+  font-weight: 500;
+  color: black;
+}
+section.tips-tricks input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color: #59b742;
+  color: #ffffff;
+}
+
+section.popular-arrivals {
+  background-color: #1e3020;
+  background-image: url(../images/bg-transparent-3.png);
+}
+section.popular-arrivals .images {
+  width: 100%;
+  display: flex;
+}
+section.popular-arrivals .images .img-1, section.popular-arrivals .images .img-2 {
+  width: 50%;
+  height: 350px;
+  position: relative;
+  background-size: cover;
+}
+@media (min-width: 1400px) {
+  section.popular-arrivals .images .img-1, section.popular-arrivals .images .img-2 {
+    height: 500px;
+  }
+}
+section.popular-arrivals .images .img-1 img, section.popular-arrivals .images .img-2 img {
+  width: 100%;
+}
+section.popular-arrivals .images .img-1 .overlay, section.popular-arrivals .images .img-2 .overlay {
+  background-color: rgba(0, 0, 0, 0.212);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+}
+section.popular-arrivals .images .img-1 .overlay span, section.popular-arrivals .images .img-2 .overlay span {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+section.popular-arrivals .images .img-1 .overlay h3, section.popular-arrivals .images .img-2 .overlay h3 {
+  font-size: 1.5em;
+}
+section.popular-arrivals .images .img-1 .overlay input, section.popular-arrivals .images .img-2 .overlay input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+section.popular-arrivals .images .img-1 .overlay input:hover, section.popular-arrivals .images .img-2 .overlay input:hover {
+  background-color: #59b742;
+  color: #ffffff;
+  cursor: pointer;
+}
+section.popular-arrivals .images .img-1 {
+  background-image: url("../images/banner-8-2x.jpg");
+}
+section.popular-arrivals .images .img-2 {
+  background-image: url("../images/banner-9-2x.jpg");
+}
+section.popular-arrivals .container .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.popular-arrivals .container .icons .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+section.popular-arrivals .container .icons .icon i {
+  font-size: 2.5em;
 }
 
 main section.browse-category h2 {

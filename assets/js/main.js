@@ -6,5 +6,6 @@ var app = new Vue({
         food_type: food,
         products: products,
         testimonials: testimonials,
+        tips: tips,
     }
 });

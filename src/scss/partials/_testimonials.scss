@@ -1,7 +1,11 @@
 section.testimonials{
-    background-color: $green-kelp;
-    background-image: url(../images/bg-transparent-3.png);
-    height: 450px;
+    height: 800px;
+    .testimonials-bg{
+        height: 400px;
+        background-color: $green-kelp;
+        background-image: url(../images/bg-transparent-3.png);
+    }
+    
 
     .container{
         height: 100%;
@@ -38,12 +42,25 @@ section.testimonials{
         }
 
         .newsletter{
+            margin-top: -50px;
             height: 350px;
             background-image: url('../images/banner-7-2x-scaled.jpg');
+            box-shadow: inset 400px 400px 400px 400px rgba(0, 0, 0, 0.062);
             background-size: cover;
             
             @include flex-column-start-center;
             padding-left: 50px;
+
+            span{
+                font-size: nth($fs, 7);
+                font-weight: bold
+            }
+
+            p{
+                width: 450px;
+                text-align: left;
+                font-size: nth($fs, 3);
+            }
 
             input{
                 
@@ -51,7 +68,7 @@ section.testimonials{
 
                 &.text{
                     background-color: $westar;
-                    width: 270px;
+                    width: 300px;
                 }
 
                 &.button{
