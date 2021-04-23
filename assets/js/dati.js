@@ -171,6 +171,10 @@ const nav_links = [
     }
 ]
 
+const nav_footer = ['Home', 'About', 'Blog', 'Contact', 'Shop']
+
+const social_links = ['fab fa-facebook-f', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-youtube']
+
 const shop_by_brand_links =['Bed', 'Food', 'Toys', 'Transport']
 
 const useful_links =['My account', 'Orders', 'Checkout', 'Cart']

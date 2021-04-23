@@ -66,7 +66,29 @@ footer{
                     &.button{
                         background-color: $apple;
                         color: $white;
+
+                        &:hover{
+                            @include button-hover-white;
+                        }
                     }
+                }
+            }
+        }
+
+        ul.nav_links{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            li{
+                a{
+                    color: $white;
+                    font-size: nth($fs, 3);
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+
+                i{
+                    font-size: nth($fs, 6);
                 }
             }
         }
@@ -75,5 +97,12 @@ footer{
     .bottom-footer{
         background-color: black;
         height: 50px;
+        @include flex-center-center;
+
+        span{
+            color: $white;
+            font-size: nth($fs, 2);
+            word-spacing: 2px;
+        }
     }
 }

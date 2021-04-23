@@ -337,14 +337,20 @@
                         <input class="text" type="text" placeholder="Insert your email ...*">
                         <input class="button" type="button" value="Subscribe">
                     </div>
-
-                    
                 </div>
+
+                <ul class="nav_links pt-10">
+                    <li v-for='nav_link in nav_footer' class="ml-4 mr-4"><a href="">{{nav_link}}</a></li>
+                </ul>
+
+                <ul class="nav_links social pt-10">
+                    <li v-for='social_link in social_links' class="ml-3 mr-3"><a href=""><i :class="`${social_link}`"></i></a></li>
+                </ul>
 
 
             </div>
             <div class="bottom-footer">
-
+                <span>© Copytight 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</span>
             </div>
 
         </footer>

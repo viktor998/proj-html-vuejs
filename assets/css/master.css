@@ -1256,7 +1256,34 @@ footer .top-footer .container .newsletter input.button {
   background-color: #A2B742;
   color: #ffffff;
 }
+footer .top-footer .container .newsletter input.button:hover {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+footer .top-footer ul.nav_links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .top-footer ul.nav_links li a {
+  color: #ffffff;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer .top-footer ul.nav_links li i {
+  font-size: 1.5em;
+}
 footer .bottom-footer {
   background-color: black;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .bottom-footer span {
+  color: #ffffff;
+  font-size: 0.5em;
+  word-spacing: 2px;
 }

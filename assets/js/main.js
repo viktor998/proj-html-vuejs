@@ -11,5 +11,7 @@ var app = new Vue({
         products_arrival: products_arrival,
         shop_by_brand_links: shop_by_brand_links,
         useful_links: useful_links,
+        nav_footer: nav_footer,
+        social_links: social_links,
     }
 });
