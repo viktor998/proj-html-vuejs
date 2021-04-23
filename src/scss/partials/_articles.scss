@@ -22,8 +22,6 @@ section.tips-tricks{
                     height: 200px;
                     
                 }
-
-                
                 .overlay{
                     position: absolute;
                     background-color: rgba(0, 0, 0, 0.219);
@@ -39,8 +37,6 @@ section.tips-tricks{
                         width: 160px;
                         color: $white;
                     }
-
-                   
                 }
             }
 
@@ -70,5 +66,9 @@ section.tips-tricks{
         @include button;
         background-color: $apple;
         color: $white;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

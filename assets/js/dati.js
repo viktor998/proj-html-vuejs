@@ -137,3 +137,7 @@ const products_arrival = [
         product_img: './assets/images/product-10-300x300.jpg'
     }
 ]
+
+const shop_by_brand_links =['Bed', 'Food', 'Toys', 'Transport']
+
+const useful_links =['My account', 'Orders', 'Checkout', 'Cart']

@@ -18,7 +18,7 @@
 $types: m, p;
 
 @each $type in $types {
-    @for $i from 1 through 8{
+    @for $i from 1 through 16{
         .#{$type}t-#{$i}{
             @if($type==m ){
                 margin-top: 0.25em * $i;

@@ -10,6 +10,29 @@ section.products-price{
             @include flex-center-center;
             flex-direction: column;
             line-height: 2;
+            
+            .image{
+                width: 200px;
+                height: 200px;
+                position: relative;
+
+                &:hover .overlay{
+                    @include flex-column-center-center;
+                }
+                
+                @include overlay-sepia;
+
+            }
+            p{
+                color: $bay-leaf;
+                font-size: nth($fs, 4);
+
+                span.discount{
+                    color: black;
+                    font-size: nth($fs, 3);
+                    text-decoration: line-through;
+                }
+            }
             span{
                 font-size: nth($fs, 3);
                 font-weight: bold;

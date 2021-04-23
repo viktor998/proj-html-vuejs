@@ -10,7 +10,7 @@ $ming: #35697c;
 $mandys-pink: #efbeb0;
 $morning-glory: #8bd3df;
 $amaranth: #e52b51;
-$apple: #59b742;
+$apple: #A2B742;
 
 // MEDIAN--CUT
 
@@ -29,16 +29,6 @@ $taupe: #463a32;
 $dawn-pink: #faf4f4;
 
 // Color
-
-// Font--Size
-
-// $em: 0.25;
-
-// @for $i from 1 through 8{
-//     #{$fs}-#{$i}: append($em * $i);
-    
-// }
-
 $fs: ();
 @for $i from 1 through 16 {
   $fs: append($fs, $i * 0.25em);

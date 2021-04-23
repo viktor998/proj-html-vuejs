@@ -152,7 +152,14 @@
                 <div class="container">
                     
                     <div v-for='product in products' class="product pt-4">
-                        <img :src="`${product.product_img}`" alt="">
+                        <div class="image">
+                            <img :src="`${product.product_img}`" alt="">
+                            <div class="overlay">
+                                <i class="far fa-check-square"></i>
+                                <p class="pt-3">view cart</p>
+                            </div>
+                        </div>
+                        
                         <span class="description pt-4">{{product.title}}</span>
                         <span  class="price"> <span class="discount pr-2">{{product.discount}}</span> {{product.price}}</span>
                         
@@ -296,6 +303,41 @@
                 
             </section>
         </main>
+
+        <footer class="mt-16">
+            <div class="top-footer pt-16 pb-16">
+                <div class="container">
+                    <div class="info-contact">
+                        <div class="logo">
+                            <img src="./assets/images/mobile-light-pet-logo-2x-400x105.png" alt="">
+                        </div>
+                        <p class="pt-4">
+                            1234 Avada Avenue Avadaville <br>
+                            info@your-company.com <br>
+                            Call us: (1) 234 5678
+                        </p>
+                    </div>
+
+                    <div class="shop_by_brand pt-12">
+                        <h3 >Shop by brand</h3>
+                        <ul class="pt-4">
+                            <li v-for='brand_link in shop_by_brand_links'><a href="">{{brand_link}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="useful_links pt-12">
+                        <h3>Useful links</h3>
+                        <ul class="pt-4">
+                            <li v-for='useful_link in useful_links'><a href="">{{useful_link}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+
+            </div>
+
+        </footer>
 
     </div>
 

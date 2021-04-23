@@ -1,0 +1,48 @@
+footer{
+    width: 100%;
+    .top-footer{
+        background-color: $green-kelp;
+        .container{
+            @include flex-between-center;
+            color: $white;
+            font-size: nth($fs, 3);
+
+            .info-contact{
+                .logo{
+                    & img{
+                        width: 160px;
+                    }
+                }
+
+                p{
+                    
+                    line-height: 1.6;
+                }
+            }
+
+            .shop_by_brand , .useful_links{
+
+                h3{
+                    font-size: nth($fs, 5);
+                    font-weight: 600;
+                }
+
+                ul li{
+                    list-style: none;
+                    line-height: 2.5;
+
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    .bottom-footer{
+        background-color: black;
+        height: 50px;
+    }
+}

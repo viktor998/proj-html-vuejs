@@ -8,5 +8,7 @@ var app = new Vue({
         testimonials: testimonials,
         tips: tips,
         products_arrival: products_arrival,
+        shop_by_brand_links: shop_by_brand_links,
+        useful_links: useful_links,
     }
 });
