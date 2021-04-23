@@ -8,15 +8,14 @@
                 list-style: none;
                 @include flex-center-center;
                 li{
+                    &.active a{
+                        color: black;
+                        font-weight: 700;
+                    }
                     a{
                         text-decoration: none;
                         padding: 0 20px;
                         color: $natural-gray;
-
-                        &.active{
-                            color: black;
-                        }
-
                         &:hover{
                             color: black;
                         }

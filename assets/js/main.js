@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#root',
     data: {
         search: '',
+        nav_links: nav_links,
         categories: categories,
         food_type: food,
         products: products,

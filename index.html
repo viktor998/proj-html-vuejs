@@ -37,12 +37,12 @@
                 <nav>
                     <div class="links">
                         <ul>
-                            <li><a class="active arrow-down" href="">Home</a></li>
-                            <li><a class="arrow-down" href="">Shop</a></li>
+                            <li v-for='link in nav_links' :class="(link.active)? 'active': ''"><a  :class="(link.arrow_down)? 'arrow-down': ''"  href="">{{link.link}}</a></li>
+                            <!-- <li><a class="arrow-down" href="">Shop</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Blog</a></li>
                             <li><a href="">Contact</a></li>
-                            <li><a class="arrow-down" href="">Shop by brand</a></li>
+                            <li><a class="arrow-down" href="">Shop by brand</a></li> -->
                         </ul>
                     </div>
                 </nav>
@@ -307,7 +307,7 @@
         <footer class="mt-16">
             <div class="top-footer pt-16 pb-16">
                 <div class="container">
-                    <div class="info-contact">
+                    <div class="info-contact mb-16">
                         <div class="logo">
                             <img src="./assets/images/mobile-light-pet-logo-2x-400x105.png" alt="">
                         </div>
@@ -318,20 +318,30 @@
                         </p>
                     </div>
 
-                    <div class="shop_by_brand pt-12">
+                    <div class="shop_by_brand pt-14 mb-16">
                         <h3 >Shop by brand</h3>
                         <ul class="pt-4">
                             <li v-for='brand_link in shop_by_brand_links'><a href="">{{brand_link}}</a></li>
                         </ul>
                     </div>
 
-                    <div class="useful_links pt-12">
+                    <div class="useful_links pt-14 mb-16">
                         <h3>Useful links</h3>
                         <ul class="pt-4">
                             <li v-for='useful_link in useful_links'><a href="">{{useful_link}}</a></li>
                         </ul>
                     </div>
+
+                    <div class="newsletter mt-16 mb-16">
+                        <span class="ml-4 mt-4">Subscribe to our newsletter </span>
+                        <input class="text" type="text" placeholder="Insert your email ...*">
+                        <input class="button" type="button" value="Subscribe">
+                    </div>
+
+                    
                 </div>
+
+
             </div>
             <div class="bottom-footer">
 

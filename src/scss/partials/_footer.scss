@@ -3,6 +3,7 @@ footer{
     .top-footer{
         background-color: $green-kelp;
         .container{
+            border-bottom: 0.01em solid rgba(255, 255, 255, 0.319);
             @include flex-between-center;
             color: $white;
             font-size: nth($fs, 3);
@@ -29,7 +30,7 @@ footer{
 
                 ul li{
                     list-style: none;
-                    line-height: 2.5;
+                    line-height: 3;
 
                     a{
                         text-decoration: none;
@@ -37,6 +38,36 @@ footer{
                     }
                 }
                 
+            }
+
+            .newsletter{
+                @include flex-column-center-around;
+                height: 200px;
+                width: 180px;
+                border-radius: 8px;
+                background-color: #2c472f;
+                background-image: url(../images/bg-transparent-3.png);
+                background-size: cover;
+
+                span{
+                    font-size: nth($fs, 5);
+                    font-weight: 600;
+                }
+
+                input{
+                    @include button;
+                    width: 150px;
+
+                    &.text{
+                        font-size: nth($fs, 3);
+                        
+                    }
+
+                    &.button{
+                        background-color: $apple;
+                        color: $white;
+                    }
+                }
             }
         }
         

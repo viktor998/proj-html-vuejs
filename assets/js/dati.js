@@ -138,6 +138,39 @@ const products_arrival = [
     }
 ]
 
+const nav_links = [
+    {
+        link: 'Home',
+        active: true,
+        arrow_down: true,
+    },
+    {
+        link: 'Shop',
+        active: false,
+        arrow_down: true,
+    },
+    {
+        link: 'About',
+        active: false,
+        arrow_down: false,
+    },
+    {
+        link: 'Blog',
+        active: false,
+        arrow_down: false,
+    },
+    {
+        link: 'Contact',
+        active: false,
+        arrow_down: false,
+    },
+    {
+        link: 'Shop by brand',
+        active: false,
+        arrow_down: true,
+    }
+]
+
 const shop_by_brand_links =['Bed', 'Food', 'Toys', 'Transport']
 
 const useful_links =['My account', 'Orders', 'Checkout', 'Cart']
