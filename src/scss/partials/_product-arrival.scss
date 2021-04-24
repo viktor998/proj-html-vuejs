@@ -32,6 +32,18 @@ section.product-arrival{
                     text-decoration: line-through;
                 }
             }
+
+            .sale{
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                background-color: $bay-leaf;
+                color: $white;
+                font-size: nth($fs, 3);
+                font-weight: 600;
+                padding: 5px;
+                border-radius: 50%;
+            }
             
         }
     }

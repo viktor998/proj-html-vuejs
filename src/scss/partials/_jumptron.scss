@@ -1,9 +1,14 @@
 header{
     .jumptron{
+        position: relative;
+        .container{
+            height: 60px;
+        }
         height: 700px;
         width: 100vw;
         background-image: url(../images/bg-transparent-3.png);
         background-color: $green-kelp;
+        position: relative;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
         ul{
@@ -21,7 +26,7 @@ header{
         }
 
         .bg-img{
-            height: 75%;
+            height: 80%;
             width: 100%;
             background-image: url(../images/banner-5-2x-scaled.jpg);
             box-shadow: inset 400px 400px 400px 400px #00000070;
@@ -71,6 +76,47 @@ header{
                     color: $white;
                     font-size: nth($fs, 5);
                     padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .overlay-squares{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        .square{
+            border-radius: 5px;
+            height: 60px;
+            width: 60px;
+            @include flex-center-center;
+            background-color: $white;
+            img{
+                height: 45px;
+                filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+                -webkit-filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+                -moz-filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+            }
+            &.mt-2{
+                @include flex-column-center-center;
+                p{
+                    font-size: nth($fs, 5);
+                    font-weight: bold;
+                    color: $apple;
+                    position: relative;
+                }
+
+                p:before{
+                    content: '$';
+                    font-size: nth($fs, 3);
+                    position: absolute;
+                    left: -10px;
+                    top: -5px;
+                }
+
+                span{
+                    padding-top: 5px;
+                    font-size: nth($fs, 3);
                 }
             }
         }

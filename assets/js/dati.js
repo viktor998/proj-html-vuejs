@@ -171,6 +171,25 @@ const nav_links = [
     }
 ]
 
+const pop_arr_icons= [
+    {
+        icon:'fas fa-truck',
+        description: 'Free worldwide deliveries'
+    },
+    {
+        icon:'far fa-map',
+        description: 'Find stores near you'
+    },
+    {
+        icon:'fas fa-dollar-sign',
+        description: 'Best price guaranteed'
+    },
+    {
+        icon:'far fa-credit-card',
+        description: 'All credit card accepted'
+    }
+]
+
 const nav_footer = ['Home', 'About', 'Blog', 'Contact', 'Shop']
 
 const social_links = ['fab fa-facebook-f', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-youtube']

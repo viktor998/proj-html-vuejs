@@ -544,50 +544,61 @@ body {
   padding-right: 4em;
 }
 
-.container nav {
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  height: 60px;
+  line-height: 60px;
   width: 100%;
 }
-.container nav .links {
+nav .links {
   width: 100%;
   margin: 0 auto;
 }
-.container nav .links ul {
+nav .links ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container nav .links ul li.active a {
+nav .links ul li.active a {
   color: black;
   font-weight: 700;
 }
-.container nav .links ul li a {
+nav .links ul li a {
   text-decoration: none;
   padding: 0 20px;
   color: #978f88;
 }
-.container nav .links ul li a:hover {
+nav .links ul li a:hover {
   color: black;
 }
-.container nav .links ul li a.arrow-down::after {
+nav .links ul li a.arrow-down::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
   padding-left: 5px;
 }
-.container nav .links ul li a.arrow-down {
+nav .links ul li a.arrow-down {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header .jumptron {
+  position: relative;
   height: 700px;
   width: 100vw;
   background-image: url(../images/bg-transparent-3.png);
   background-color: #1e3020;
+  position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header .jumptron .container {
+  height: 60px;
 }
 header .jumptron ul {
   width: 100%;
@@ -605,7 +616,7 @@ header .jumptron ul li span {
   font-weight: bolder;
 }
 header .jumptron .bg-img {
-  height: 75%;
+  height: 80%;
   width: 100%;
   background-image: url(../images/banner-5-2x-scaled.jpg);
   box-shadow: inset 400px 400px 400px 400px #00000070;
@@ -658,6 +669,50 @@ header .jumptron .jumbo-bottom span a {
   color: #ffffff;
   font-size: 1.25em;
   padding-left: 15px;
+}
+header .overlay-squares {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+header .overlay-squares .square {
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+header .overlay-squares .square img {
+  height: 45px;
+  filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+  -webkit-filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+  -moz-filter: brightness(140%) hue-rotate(148deg) saturate(613%);
+}
+header .overlay-squares .square.mt-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header .overlay-squares .square.mt-2 p {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #A2B742;
+  position: relative;
+}
+header .overlay-squares .square.mt-2 p:before {
+  content: "$";
+  font-size: 0.75em;
+  position: absolute;
+  left: -10px;
+  top: -5px;
+}
+header .overlay-squares .square.mt-2 span {
+  padding-top: 5px;
+  font-size: 0.75em;
 }
 
 header {
@@ -916,6 +971,9 @@ section.testimonials .container .newsletter input.button {
 section.testimonials .container .newsletter input.button:hover {
   cursor: pointer;
 }
+section.testimonials .container .newsletter input:focus {
+  outline: 0;
+}
 
 section.tips-tricks span.section-name {
   font-size: 1.5em;
@@ -1117,6 +1175,17 @@ section.product-arrival .latest-products .product p span.discount {
   font-size: 0.75em;
   text-decoration: line-through;
 }
+section.product-arrival .latest-products .product .sale {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #77ab82;
+  color: #ffffff;
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 50%;
+}
 
 main section.browse-category h2 {
   font-size: 2em;
@@ -1196,6 +1265,7 @@ main .food_type input:hover {
 
 footer {
   width: 100%;
+  position: relative;
 }
 footer .top-footer {
   background-color: #1e3020;
@@ -1212,7 +1282,7 @@ footer .top-footer .container .info-contact .logo img {
   width: 160px;
 }
 footer .top-footer .container .info-contact p {
-  line-height: 1.6;
+  line-height: 2;
 }
 footer .top-footer .container .shop_by_brand h3, footer .top-footer .container .useful_links h3 {
   font-size: 1.25em;
@@ -1232,25 +1302,29 @@ footer .top-footer .container .newsletter {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 200px;
-  width: 180px;
+  margin-top: 100px;
+  height: 250px;
+  width: 230px;
   border-radius: 8px;
   background-color: #2c472f;
   background-image: url(../images/bg-transparent-3.png);
   background-size: cover;
 }
 footer .top-footer .container .newsletter span {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 footer .top-footer .container .newsletter input {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 500;
-  width: 150px;
+  width: 180px;
 }
 footer .top-footer .container .newsletter input.text {
-  font-size: 0.75em;
+  font-size: 1em;
+}
+footer .top-footer .container .newsletter input.text:focus {
+  outline: 0;
 }
 footer .top-footer .container .newsletter input.button {
   background-color: #A2B742;
@@ -1286,4 +1360,42 @@ footer .bottom-footer span {
   color: #ffffff;
   font-size: 0.5em;
   word-spacing: 2px;
+}
+footer .back-to-top {
+  width: 50px;
+  height: 30px;
+  background-color: #333333;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .back-to-top:hover {
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+
+.gotop {
+  position: fixed;
+  background-color: #333333;
+  color: #ffffff;
+  bottom: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gotop:hover {
+  cursor: pointer;
 }

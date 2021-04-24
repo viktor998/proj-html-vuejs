@@ -1,38 +1,47 @@
-.container{
-    nav{
+
+    
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: $white;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    .links{
         width: 100%;
-        .links{
-            width: 100%;
-            margin: 0 auto;
-            ul{
-                list-style: none;
-                @include flex-center-center;
-                li{
-                    &.active a{
-                        color: black;
-                        font-weight: 700;
-                    }
-                    a{
-                        text-decoration: none;
-                        padding: 0 20px;
-                        color: $natural-gray;
-                        &:hover{
-                            color: black;
-                        }
-
-                        &.arrow-down::after{
-                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
-                            padding-left: 5px;
-                        }
-
-                        &.arrow-down{
-                            @include flex-center-center;
-                            
-                        }
-                    }
-
-                   
+        margin: 0 auto;
+        ul{
+            list-style: none;
+            @include flex-center-center;
+            li{
+                &.active a{
+                    color: black;
+                    font-weight: 700;
+                    
                 }
+
+                a{
+                    text-decoration: none;
+                    padding: 0 20px;
+                    color: $natural-gray;
+                    &:hover{
+                        color: black;
+                        
+                    }
+
+                    &.arrow-down::after{
+                        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107";
+                        padding-left: 5px;
+                    }
+
+                    &.arrow-down{
+                        @include flex-center-center;
+                        
+                    }
+                }
+
+                
             }
         }
     }
