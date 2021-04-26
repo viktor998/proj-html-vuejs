@@ -16,11 +16,12 @@ var app = new Vue({
         social_links: social_links,
         temp_ref: '',
         display: false,
+        
+    },
+    mounted() {
+        window.addEventListener("scroll", this.handleScroll);
     },
 
-    mounted(){
-        console.log(this);
-    },
 
     methods:{
         active_switch: function(link){
@@ -39,7 +40,7 @@ var app = new Vue({
                 });
             }
 
-            if(this.temp_ref != 'Contact'){
+            if(this.temp_ref != 'Contact' && this.temp_ref != 'About' && this.temp_ref != 'Shop' && this.temp_ref != 'Home'){
                 this.display = true;
             }
             
@@ -59,8 +60,31 @@ var app = new Vue({
                     }
                 }
             });
+            
+            
+        },
 
-            this.display = false;
+        handleScroll(){
+
+            if(this.temp_ref != 'Contact'){
+                console.log(this.$refs)
+                if(window.scrollY > this.$refs.Home.offsetHeight && window.scrollY < this.$refs.mainHeight.offsetHeight){
+                    this.display = true;
+
+                    this.nav_links.forEach(element => {
+                        element.active = false;
+                        if(element.link == 'Home'){
+                            element.active = true;
+                        }
+                    });
+                }
+               
+                else{
+                    this.display = false;
+                }
+            }
+
+            
         }
         
         
