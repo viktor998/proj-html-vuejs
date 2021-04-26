@@ -16,10 +16,12 @@ var app = new Vue({
         social_links: social_links,
         temp_ref: '',
         display: false,
+        clicked: false,
         
     },
     mounted() {
         window.addEventListener("scroll", this.handleScroll);
+        
     },
 
 
@@ -40,9 +42,7 @@ var app = new Vue({
                 });
             }
 
-            if(this.temp_ref != 'Contact' && this.temp_ref != 'About' && this.temp_ref != 'Shop' && this.temp_ref != 'Home'){
-                this.display = true;
-            }
+
             
         },
         goTop: function()   {
@@ -60,29 +60,26 @@ var app = new Vue({
                     }
                 }
             });
-            
-            
+
+           
         },
 
         handleScroll(){
 
-            if(this.temp_ref != 'Contact'){
-                console.log(this.$refs)
-                if(window.scrollY > this.$refs.Home.offsetHeight && window.scrollY < this.$refs.mainHeight.offsetHeight){
-                    this.display = true;
+            this.nav_links.forEach(element => {
+                element.active = false;
+                if(element.link == 'Home'){
+                    element.active = true;
+                }
+            });
 
-                    this.nav_links.forEach(element => {
-                        element.active = false;
-                        if(element.link == 'Home'){
-                            element.active = true;
-                        }
-                    });
-                }
-               
-                else{
-                    this.display = false;
-                }
+            if(window.scrollY > this.$refs.Home.offsetHeight && window.scrollY < this.$refs.mainHeight.offsetHeight){
+                this.display = true;
             }
+            
+            else{
+                this.display = false;
+            }   
 
             
         }
